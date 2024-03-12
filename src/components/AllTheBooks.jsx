@@ -16,7 +16,7 @@ const AllTheBooks = function () {
         <h2>Libri fantasy</h2>
         {FantasyBooks.slice(0, 8).map((Book) => {
           return (
-            <Col xs={12} sm={6} md={4} lg={3} className="mb-3">
+            <Col xs={12} sm={6} md={4} lg={3} className="mb-3" key={Book.asin}>
               <Card>
                 <Card.Img variant="top" src={Book.img} />
                 <Card.Body>
@@ -36,7 +36,7 @@ const AllTheBooks = function () {
         <h2>Libri di storia</h2>
         {HistoryBooks.slice(0, 8).map((Book) => {
           return (
-            <Col xs={12} sm={6} md={4} lg={3} className="mb-3">
+            <Col xs={12} sm={6} md={4} lg={3} className="mb-3" key={Book.asin}>
               <Card>
                 <Card.Img variant="top" src={Book.img} />
                 <Card.Body>
@@ -56,7 +56,7 @@ const AllTheBooks = function () {
         <h2>Libri horror</h2>
         {HorrorBooks.slice(0, 8).map((Book) => {
           return (
-            <Col xs={12} sm={6} md={4} lg={3} className="mb-3">
+            <Col xs={12} sm={6} md={4} lg={3} className="mb-3" key={Book.asin}>
               <Card>
                 <Card.Img variant="top" src={Book.img} />
                 <Card.Body>
@@ -76,7 +76,7 @@ const AllTheBooks = function () {
         <h2>Romanzi</h2>
         {RomanceBooks.slice(0, 8).map((Book) => {
           return (
-            <Col xs={12} sm={6} md={4} lg={3} className="mb-3">
+            <Col xs={12} sm={6} md={4} lg={3} className="mb-3" key={Book.asin}>
               <Card>
                 <Card.Img variant="top" src={Book.img} />
                 <Card.Body>
@@ -98,7 +98,7 @@ const AllTheBooks = function () {
         <h2>Libri di fantascienza</h2>
         {ScifiBooks.slice(0, 8).map((Book) => {
           return (
-            <Col xs={12} sm={6} md={4} lg={3} className="mb-3">
+            <Col xs={12} sm={6} md={4} lg={3} className="mb-3" key={Book.asin}>
               <Card>
                 <Card.Img variant="top" src={Book.img} />
                 <Card.Body>
