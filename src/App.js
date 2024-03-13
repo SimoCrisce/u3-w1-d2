@@ -15,7 +15,7 @@ function App() {
       <Welcome />
       <BookList arrayOfBooks={Fantasy} />
       {/* <AllTheBooks /> */}
-      {/* <SingleBook book={Fantasy[1]} /> */}
+      <SingleBook aBook={Fantasy[0]} />
       <MyFooter />
     </>
   );
