@@ -7,6 +7,7 @@ import MyFooter from "./components/MyFooter";
 import SingleBook from "./components/SingleBook";
 import Fantasy from "./data/fantasy.json";
 import BookList from "./components/BookList";
+import CommentArea from "./components/CommentArea";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Welcome />
       <BookList arrayOfBooks={Fantasy} />
       {/* <AllTheBooks /> */}
-      <SingleBook aBook={Fantasy[0]} />
+      {/* <SingleBook aBook={Fantasy[0]} /> */}
+
       <MyFooter />
     </>
   );
